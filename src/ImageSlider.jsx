@@ -44,7 +44,7 @@ export default function ImageSlider({ images }) {
             <button onClick={nextImage} className="nextBtn"><ion-icon name="caret-forward-outline"></ion-icon></button>
 
             <div className="slider">
-               {images.map((index) => (
+               {images.map((_, index) => (
                   <button key={index} onClick={() => setImageIndex(index)} className="dots"><ion-icon name="ellipse-outline"></ion-icon></button>
                ))}
             </div>
